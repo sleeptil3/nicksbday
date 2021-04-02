@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+
+@keyframes moveIn {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(0);
+    }}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: 'Dela Gothic One', cursive;
+}
+.flex-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.red{
+    color: rgb(255, 70, 70);
+}
+img {
+    height: 200px;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 0 32px rgba(255, 255, 255, 0.462));
+
+}
+.click-effect:hover {
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+    filter: drop-shadow(0 0 75px rgba(186, 41, 41, 0.462));
+    transition: all .7s;
+
+}
+.click-effect:active {
+    transform: scale(1.1,1.1);
+}
+.curtain {
+    background-color: black;
+    position:fixed;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    transition: transform 1s;
+}
