@@ -32,8 +32,8 @@ img {
     position: relative;
     z-index: 2;
     filter: drop-shadow(0 0 32px rgba(255, 255, 255, 0.462));
-
 }
+
 .click-effect:hover {
     cursor: pointer;
     transform: scale(1.2,1.2);
