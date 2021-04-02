@@ -3,5 +3,5 @@ const curtain = document.getElementById('curtain-div');
 
 image.addEventListener('click', () => {
     curtain.style.transform = 'translateY(100vh)';
-    image.src = 'images/nick.png'
-});
+    image.setAttribute('src', 'images/nick.png');
+})
